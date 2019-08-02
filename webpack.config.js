@@ -1,8 +1,8 @@
 const path = require("path");
 const fs = require("fs");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const eslintFriendlyFormatter = require("eslint-formatter-friendly");
 
 const manifest = JSON.parse(fs.readFileSync("./manifest.webapp", "utf-8"));
 const distPath = "openmrs/owas/" + manifest.name;
@@ -23,8 +23,23 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: "pre",
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: [
+          path.resolve(__dirname, "node_modules"),
+          path.resolve(__dirname, "openmrs")
+        ],
+        loader: "eslint-loader",
+        options: {
+          formatter: eslintFriendlyFormatter
+        }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: [
+          path.resolve(__dirname, "node_modules"),
+          path.resolve(__dirname, "openmrs")
+        ],
         loader: "babel-loader"
       }
     ]

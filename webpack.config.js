@@ -8,7 +8,7 @@ const manifest = JSON.parse(fs.readFileSync("./manifest.webapp", "utf-8"));
 const distPath = "openmrs/owas/" + manifest.name;
 
 module.exports = {
-  entry: "./index.js",
+  entry: "./index.jsx",
   output: {
     path: path.resolve(__dirname, distPath),
     filename: "main.bundle.js"
@@ -20,6 +20,15 @@ module.exports = {
     }),
     new CopyPlugin([{ from: "./manifest.webapp", to: "./manifest.webapp" }])
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      }
+    ]
+  },
   stats: {
     colors: true
   },

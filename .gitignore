@@ -1,4 +1,5 @@
 node_modules
 dist
+hawkeye_report.json
 openmrs/omods
 openmrs/owas

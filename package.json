@@ -1,0 +1,29 @@
+{
+  "name": "openmrs-owa-boilerplate",
+  "version": "1.0.0",
+  "description": "Sample Boilerplate for building OpenMRS owa apps based on PWA",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "openmrs-stop": "cd openMRS && docker-compose stop && docker-compose rm -fv",
+    "openmrs-up": "cd openMRS && docker-compose up -d",
+    "openmrs-start": "npm run openmrs-stop && npm run openmrs-up"
+  },
+  "keywords": [
+    "React",
+    "OpenMRS",
+    "OWA"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.39.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "engines": {
+    "node": "12.6.0",
+    "npm": "6.10.2"
+  }
+}

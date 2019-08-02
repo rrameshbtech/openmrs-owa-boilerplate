@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "name": "SampleOWA",
+  "description": "Place your OWA description here",
+  "icons": { "16": null, "48": "/src/img/omrs-button.png", "128": null },
+  "developer": {
+    "url": "{Replace Developer Repo Url}",
+    "name": "{developer-name}",
+    "company": "{developer-company}",
+    "email": "{developer-email-address}"
+  },
+  "activities": { "openmrs": { "href": null } },
+  "folderName": "sample-owa",
+  "baseUrl": null,
+  "launchUrl": null,
+  "launch_path": "index.html",
+  "installs_allowed_from": null,
+  "default_locale": "en",
+  "deployed.owa.name": null
+}

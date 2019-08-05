@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const eslintFormatterFriendly = require("eslint-formatter-friendly");
 const postcssPresetEnv = require("postcss-preset-env");
+const StyleLintPlugin = require("stylelint-webpack-plugin");
 
 const manifest = JSON.parse(fs.readFileSync("./manifest.webapp", "utf-8"));
 const distPath = "openmrs/owas/" + manifest.name;
@@ -19,6 +20,7 @@ module.exports = {
       filename: "index.html",
       template: "index.html"
     }),
+    new StyleLintPlugin({}),
     new CopyPlugin([{ from: "./manifest.webapp", to: "./manifest.webapp" }])
   ],
   module: {

@@ -51,6 +51,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",

@@ -1,0 +1,18 @@
+{
+  "name": "openmrs-sample-owa-e2e-tests",
+  "version": "1.0.0",
+  "description": "E2E tests for OpenMRS sample owa apps based on PWA",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "eslint-plugin-cypress": "^2.6.1"
+  }
+}

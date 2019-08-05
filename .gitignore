@@ -3,3 +3,5 @@ dist
 hawkeye_report.json
 openmrs/omods
 openmrs/owas
+
+e2e-tests/cypress/videos/*

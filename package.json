@@ -1,7 +1,7 @@
 {
   "name": "openmrs-owa-boilerplate",
   "version": "1.0.0",
-  "description": "Sample Boilerplate for building OpenMRS owa apps based on PWA",
+  "description": "Boilerplate for building OpenMRS owa apps based on PWA",
   "main": "index.jsx",
   "private": true,
   "keywords": [

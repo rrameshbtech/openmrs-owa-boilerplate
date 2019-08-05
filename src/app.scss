@@ -1,3 +1,10 @@
+// TODO: can we use the proper styleguide?
+@import "~@openmrs/style-referenceapplication/src/sass/customVariables.scss";
+
+body {
+  background: $bodyBackground;
+}
+
 h1 {
   color: royalblue;
 }

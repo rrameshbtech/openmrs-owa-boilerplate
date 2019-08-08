@@ -5,9 +5,14 @@ const CopyPlugin = require("copy-webpack-plugin");
 const eslintFormatterFriendly = require("eslint-formatter-friendly");
 const postcssPresetEnv = require("postcss-preset-env");
 const StyleLintPlugin = require("stylelint-webpack-plugin");
+const { InjectManifest } = require("workbox-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const manifest = JSON.parse(fs.readFileSync("./manifest.webapp", "utf-8"));
 const distPath = "openmrs/owas/" + manifest.name;
+const injectManifestPlugin = new InjectManifest({
+  swSrc: "./service-worker.js"
+});
 
 module.exports = {
   entry: "./index.jsx",
@@ -16,12 +21,14 @@ module.exports = {
     filename: "main.bundle.js"
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "index.html"
     }),
     new StyleLintPlugin({}),
-    new CopyPlugin([{ from: "./manifest.webapp", to: "./manifest.webapp" }])
+    new CopyPlugin([{ from: "./manifest.webapp", to: "./manifest.webapp" }]),
+    injectManifestPlugin
   ],
   module: {
     rules: [

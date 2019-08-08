@@ -17,7 +17,7 @@
     "openmrs-start": "npm run openmrs-stop && npm run openmrs-up",
     "build": "webpack --config webpack.config.js --mode production",
     "scan": "npx hawkeye scan",
-    "dev": "webpack --mode development --watch",
+    "start": "webpack --mode development --watch",
     "test": "jest",
     "test-watch": "jest --watchAll"
   },
@@ -34,6 +34,7 @@
     "@openmrs/style-referenceapplication": "^0.1.0",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "core-js": "^3.1.4",
     "css-loader": "^3.2.0",
@@ -63,7 +64,8 @@
     "stylelint-webpack-plugin": "^0.10.5",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.7.2",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "engines": {
     "node": "12.7.0",

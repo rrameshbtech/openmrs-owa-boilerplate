@@ -27,7 +27,11 @@ module.exports = {
       template: "index.html"
     }),
     new StyleLintPlugin({}),
-    new CopyPlugin([{ from: "./manifest.webapp", to: "./manifest.webapp" }]),
+    new CopyPlugin([
+      { from: "./manifest.webapp", to: "./manifest.webapp" },
+      { from: "./manifest.json", to: "./manifest.json" },
+      { from: "./src/img", to: "./images" }
+    ]),
     injectManifestPlugin
   ],
   module: {

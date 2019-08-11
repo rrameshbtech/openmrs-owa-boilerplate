@@ -2,14 +2,22 @@
   "version": "1.0.0",
   "name": "SampleOWA",
   "description": "Place your OWA description here",
-  "icons": { "16": null, "48": "/src/img/omrs-button.png", "128": null },
+  "icons": {
+    "16": null,
+    "48": "img/icons/icon-48x48.png",
+    "128": "img/icons/icon-128x128.png"
+  },
   "developer": {
     "url": "{Replace Developer Repo Url}",
     "name": "{developer-name}",
     "company": "{developer-company}",
     "email": "{developer-email-address}"
   },
-  "activities": { "openmrs": { "href": null } },
+  "activities": {
+    "openmrs": {
+      "href": "*"
+    }
+  },
   "folderName": "sample-owa",
   "baseUrl": null,
   "launchUrl": null,

@@ -30,7 +30,7 @@ module.exports = {
     new CopyPlugin([
       { from: "./manifest.webapp", to: "./manifest.webapp" },
       { from: "./manifest.json", to: "./manifest.json" },
-      { from: "./src/img", to: "./images" }
+      { from: "./src/img", to: "./img" }
     ]),
     injectManifestPlugin
   ],

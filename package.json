@@ -12,9 +12,10 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "openmrs-stop": "cd openMRS && docker-compose stop && docker-compose rm -fv",
-    "openmrs-up": "cd openMRS && docker-compose up -d",
-    "openmrs-start": "npm run openmrs-stop && npm run openmrs-up",
+    "openmrs-start": "cd openMRS && docker-compose up -d",
+    "openmrs-restart": "npm run openmrs-stop && npm run openmrs-start",
+    "openmrs-stop": "cd openMRS && docker-compose stop",
+    "openmrs-clean": "cd openMRS && docker-compose rm -fv",
     "build": "webpack --config webpack.config.js --mode production",
     "scan": "npx hawkeye scan",
     "start": "webpack --mode development --watch",

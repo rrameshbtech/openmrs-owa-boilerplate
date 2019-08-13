@@ -10,6 +10,8 @@ Boilerplate application for building OpenMRS OWA applications.
 
 `Docker Desktop > 2`
 
+`npm install --global @hawkeyesec/scanner-cli`
+
 ## Features Added
 
 - Linting - ESLint, Prettier, StyleLint

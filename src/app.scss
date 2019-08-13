@@ -3,9 +3,27 @@
 
 body {
   background: $bodyBackground;
+  margin: 0px;
 }
 
 h1 {
   color: $highlight;
   text-align: center;
+}
+
+header {
+  background: $highlight;
+  color: white;
+  line-height: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+  .logo {
+    width: 120px;
+  }
+
+  span {
+    align-self: center;
+  }
 }

@@ -43,4 +43,4 @@ Boilerplate application for building OpenMRS OWA applications.
 
 - Browse to `http://localhost:8080/openmrs/owa/{application-name}/index.html` to view our OWA's home page.
 
-- Run `npm run dev` to run application in dev mode. Dev mode watch the source files & builds whenever there is a change.
+- Run `npm start` to run application in dev mode. Dev mode watch the source files & builds whenever there is a change.

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
+
+import { Header } from "./common/header.jsx";
 
 import "./app.scss";
 
 const AppComponent = () => {
-  return <h1>Welcome to OpenMRS React Web Application!</h1>;
+  return (
+    <Fragment>
+      <Header />
+      <h1>Welcome to OpenMRS React Web Application!</h1>
+    </Fragment>
+  );
 };
 
 export default AppComponent;

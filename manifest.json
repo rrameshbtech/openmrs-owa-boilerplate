@@ -1,12 +1,27 @@
 {
+  "dir": "ltr",
+  "lang": "en-US",
   "name": "Sample OWA",
   "short_name": "OWA",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
+  "Scope": "/openmrs/owa/SampleOWA/",
+  "serviceworker": {
+    "src": "./service-worker.js",
+    "scope": "/openmrs/owa/SampleOWA/",
+    "type": "",
+    "update_via_cache": "none"
+  },
   "start_url": "./index.html",
+  "splash_pages": null,
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "categories": [
+    "health",
+    "medical"
+  ],
   "icons": [
     {
       "src": "img/icons/icon-72x72.png",
@@ -48,6 +63,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "splash_pages": null
+  ]
 }

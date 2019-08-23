@@ -9,7 +9,7 @@ const { InjectManifest } = require("workbox-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const manifest = JSON.parse(fs.readFileSync("./manifest.webapp", "utf-8"));
-const distPath = "openmrs/owas/" + manifest.name;
+const distPath = `openmrs/owas/${manifest.name}`;
 const injectManifestPlugin = new InjectManifest({
   swSrc: "./service-worker.js"
 });

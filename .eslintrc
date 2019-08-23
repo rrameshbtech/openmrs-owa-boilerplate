@@ -19,7 +19,13 @@
     "react/jsx-uses-vars": 1,
     "react/prop-types": 0
   },
-  "plugins": ["react", "prettier", "jsx-a11y", "import", "cypress"],
+  "plugins": [
+    "react",
+    "prettier",
+    "jsx-a11y",
+    "import",
+    "cypress"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",

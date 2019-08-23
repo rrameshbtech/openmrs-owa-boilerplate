@@ -1,6 +1,7 @@
 # openmrs-owa-boilerplate
 
 [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/)
+[![Known Vulnerabilities](https://snyk.io//test/github/rrameshbtech/openmrs-owa-boilerplate/badge.svg)](https://snyk.io//test/github/rrameshbtech/openmrs-owa-boilerplate)
 
 Boilerplate application for building OpenMRS OWA applications.
 

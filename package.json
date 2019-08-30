@@ -67,8 +67,8 @@
     "workbox-webpack-plugin": "^4.3.1"
   },
   "engines": {
-    "node": "12.7.0",
-    "npm": "6.10.2"
+    "node": "12.9.1",
+    "npm": "6.11.2"
   },
   "jest": {
     "moduleNameMapper": {

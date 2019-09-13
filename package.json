@@ -62,7 +62,7 @@
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-webpack-plugin": "^0.10.5",
-    "webpack": "^4.39.3",
+    "webpack": "^4.40.2",
     "webpack-cli": "^3.3.7",
     "workbox-webpack-plugin": "^4.3.1"
   },

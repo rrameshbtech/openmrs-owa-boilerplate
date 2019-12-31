@@ -7,7 +7,7 @@ Boilerplate application for building OpenMRS OWA applications.
 
 ## Pre Requisites
 
-`Node v12.9.1`
+`Node v12.14.0`
 
 `Docker Desktop > 2`
 

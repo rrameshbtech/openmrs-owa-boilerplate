@@ -1,0 +1,12 @@
+{
+  "plugins": ["cypress", "chai-friendly"],
+  "extends": ["plugin:cypress/recommended", "plugin:chai-friendly/recommended"],
+  "rules": {
+    "no-console": "off",
+    "comma-dangle": "off"
+  },
+  "env": {
+    "cypress/globals": true,
+    "node": true
+  }
+}
